@@ -126,7 +126,7 @@ drone_db
 
 ```markdown
 
-workerD
+workerD tabell:
 +----+-------+------------+
 | id | name  | status     |
 +----+-------+------------+
@@ -138,7 +138,7 @@ workerD
 |  8 | null  | null       |
 +----+-------+------------+
 
-disassemblyD
+disassemblyD tabell:
 +----+---------+--------+-----------+
 | id | name    | status | serial    |
 +----+---------+--------+-----------+
