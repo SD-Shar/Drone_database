@@ -59,7 +59,7 @@ På siden viser det tittel, Etter man har endret navn og/eller status kan man tr
    ```bash
    pip install flask
    pip install mysql.connector
-   .env (med passord)
+   .env - med eget passord
 
 ```
 
@@ -125,11 +125,8 @@ drone_db
 **###Tabeller:**\
 
 ```markdown
-\| Tabell \| Felt \| Datatype \| Beskrivelse \|
-\|--------\|-------\|-----------\|--------------\| \| customers \| id \|
-INT \| Primærnøkkel \| \| customers \| name \| VARCHAR(255) \| Navn \|
-\| customers \| address \| VARCHAR(255) \| Adresse \|
 
+workerD
 +----+-------+------------+
 | id | name  | status     |
 +----+-------+------------+
@@ -141,6 +138,7 @@ INT \| Primærnøkkel \| \| customers \| name \| VARCHAR(255) \| Navn \|
 |  8 | null  | null       |
 +----+-------+------------+
 
+disassemblyD
 +----+---------+--------+-----------+
 | id | name    | status | serial    |
 +----+---------+--------+-----------+
