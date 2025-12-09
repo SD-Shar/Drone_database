@@ -71,19 +71,31 @@ Alle droner i databasen har en "view profile" knapp, den vil lede brukeren til e
 ------------------------------------------------------------------------
 
 
-!??
+!!?
 
 ## 3. Server-, infrastruktur- og nettverksoppsett
 
 ### Servermiljø
 ```markdown
-*Ubuntu VM, fysisk server, Mariadb.*
+*Ubuntu v.25, Mariadb, Raspberry pi*
 
 ### Nettverksoppsett
 
 -   Nettverksdiagram
 -   IP-adresser\
--   Porter\
+ip-adresser for server (raspberry pi): 10.200.14.11 , ip adresse for klient(windows): 10.2.0.31
+-   Porter\ (mariadb - sudo ufw)
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+80                         ALLOW       Anywhere
+Samba                      ALLOW       Anywhere
+3306/tcp                   ALLOW       Anywhere
+22/tcp (v6)                ALLOW       Anywhere (v6)
+80 (v6)                    ALLOW       Anywhere (v6)
+Samba (v6)                 ALLOW       Anywhere (v6)
+3306/tcp (v6)              ALLOW       Anywhere (v6)
+
 -   Brannmurregler
 
 Eksempel:
@@ -99,14 +111,15 @@ Eksempel:
 ```
 
 ------------------------------------------------------------------------
-???
+!!!
 
 ## 4. Prosjektstyring -- GitHub Projects (Kanban)
 ```markdown
--   To Do / In Progress / Done\
--   Issues\
+-   Backlog / In Progress / Done\
 
 Refleksjon: Hvordan hjalp Kanban arbeidet?
+
+- Jeg brukte Kanban litt senere enn jeg skulle i prodjektet fordi jeg visste ikke om det, og at vi skulle bruke det. Jeg har brukt en personlig logg hver dag for å skrive ned plan for dagen og holde styr på hva jeg skal gjøre og har gjort. Jeg tok screenshots for å sammenligne hva jeg ville ha som gjorde oppdateringer mye mer oversiktlige.
 ```
 
 ------------------------------------------------------------------------
@@ -253,7 +266,7 @@ så settes x_pos inn i s. Den bruker join(random.choice('01')) for _ in range (9
 
 
 ------------------------------------------------------------------------
-
+???
 ## 8. Sikkerhet og pålitelighet
 
 -   .env\
