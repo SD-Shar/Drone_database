@@ -11,11 +11,11 @@
 **Kort beskrivelse av prosjektet:**\
 
 ```markdown
- **Denne databasen er basert på en scene fra en indie animasjonsserie (animasjonsserie som er produsert av en uavhengig gruppe med kunstnere og animatører) på youtube som heter MURDER DRONES. I serien er det en scene som viser en enkel database med droner, og jeg tenkte at å bruke det som utgangspunk for prosjektet mitt ville vært gøy og en god mulighet for læring. Jeg har tatt litt kreativ frihet ved å lage en lignende database med det jeg har lært, og stylet det til å se litt ut som serien. I tillegg har jeg lagt til flere elementer, tabeller og krav fra oppgaven vi har fått, til å vise kompetansen min med databaser i mariadb, bruk av python, flask og css.**
+ **Denne databasen er basert på en scene fra en indie animasjonsserie (indie er tatt fra det engelske ordet "independent" som i denne konteksten betyr at serien er produsert av en uavhengig gruppe med kunstnere og animatører) på youtube som heter MURDER DRONES. I serien er det en scene som viser en enkel database med droner, og jeg tenkte at å bruke det som utgangspunk for prosjektet mitt ville vært gøy og en god mulighet for læring. Jeg har tatt litt kreativ frihet ved å lage en lignende database med det jeg kunne fra før og har lært mens vi har jobbet med databaser, og stylet det til å se litt ut som serien. I tillegg har jeg lagt til flere elementer, tabeller og krav fra oppgaven vi har fått, til å vise kompetansen min med databaser i mariadb, bruk av python, flask og css.**
  
  **Litt om MURDERDRONES:**
 
- **Murder Drones er en indie-animasjonsserie på YoutTube, produsert av GLITCH Productions og laget/skrevet av Liam Vickers. Det er en horror-komedie på 8 episoder og tar plass i året 3076 på en eksoplanet ved navn "Copper 9". Serien følger hovedkarakteren Uzi, en *worker drone* som møter en *disassembly drone* ved navn "N" (Bokstaven kommer fra serienummeret hans, som er på armen. Jeg har tatt inspirasjon fra dette og lagt det til i databasen som du vil se lenger ned). *Worker Drones* var lagd for å utvinne ressurser fra eksoplaneter, men etter en kjernekollaps på planeten, utryddet det allt av mennenske liv. Uten mennesker adapterte *worker dronene* til en egen sivilisasjon for seg selv. På grunn av dette ble det sent "disassembly drones", som skulle fjerne *worker drones* fra planeten, siden menneskene ville ikke ha sansende og frittgående KI. *Worker dronene* gav *disassembly drones* kallenavnet "Murder Drones". (herav tittelen)**
+ **Murder Drones er en indie-animasjonsserie på YoutTube, produsert av GLITCH Productions og laget/skrevet av Liam Vickers. Det er en horror-komedie på 8 episoder og tar plass i året 3071 på en eksoplanet ved navn "Copper 9". Serien følger hovedkarakteren Uzi, en *worker drone* som møter en *disassembly drone* ved navn "N" (Bokstaven kommer fra serienummeret hans, som er på armen. Jeg har tatt inspirasjon fra dette og lagt det til i databasen som du vil se lenger ned). *Worker Drones* var lagd for å utvinne ressurser fra eksoplaneter, men etter en kjernekollaps på planeten, utryddet det allt av mennenske liv. Uten mennesker adapterte *worker dronene* til en egen sivilisasjon for seg selv. På grunn av dette ble det sent "disassembly drones", som skulle fjerne *worker drones* fra planeten, siden menneskene ville ikke ha sansende og frittgående KI. *Worker dronene* gav *disassembly drones* kallenavnet "Murder Drones". (herav tittelen)**
 
 ```
 ------------------------------------------------------------------------
@@ -39,17 +39,17 @@ Alle dronene får en ID automatisk som ikke endrer seg.
 (Se brukerveiledning for mer oversikt)
 
 #### Worker Drones
-Når programmet kjøres, åpnes det til html siden "/overview" der det vises overskriften som forklarer databasen, to tabeller ved siden av hverandre og to "legg til" knapper under hver tabell. Den første kolonnen til venstre er til *wokerdrones* og viser en tabell med ID, navn, status og muligheten til å slette dronen eller "view profile".
+Når programmet kjøres, åpnes det til startsiden "/overview" der det vises overskrift, to tabeller ved siden av hverandre og to "legg til" knapper under hver tabell. Den første kolonnen til venstre er til *wokerdrones* og viser en tabell med ID, navn, status og muligheten til å slette dronen, se på informasjonen eller redigere det via "view profile".
 
 #### Disassembly Drones
 Den neste kolonnen inneholder en tabell som viser *disassembly drones*. Tabellen vist er helt lik *workerdrones*, med ID, navn, og status og muligheten til å redigere og/eller slette.
-*Disassembly drones* har noe ekstra tilknyttet til dataen som kan bli funnet ved å klikke på en *disassembly drone* profil, (via "View Profile" knappen). Under navnet på dronen vil det stå et tilfeldig serienummer for hver disassembly drone. (Dette er en referanse til serien der alle disassembly drones har et eget serienummer.)
+*Disassembly drones* har noe ekstra tilknyttet til dataen som kan bli funnet ved å klikke på en *disassembly drone* profil. Under navnet på dronen vil det stå et tilfeldig serienummer for hver *disassembly drone*.
 
 ### Delete (slett funksjon):
-For alle droner er det en slett knapp ved siden av med navnet "Delete". hvis du ønsker å slette en drone vil det komme opp en pop-up-vindu som spør om du er helt sikker på valget ditt. Om du velger å slette dronen vil den automatisk oppdatere og slette dronen fra databasen permanent.
+For alle droner er det en slett knapp ved siden av med navnet "Delete". Hvis du ønsker å slette en drone vil det komme opp en pop-up-vindu som spør om du er helt sikker på valget ditt. Om du velger å slette dronen vil den automatisk oppdatere tabellen og slette dronen fra databasen permanent.
 
 ### View profile (redigering av droner):
-Alle droner i databasen har en "view profile" knapp, den vil lede brukeren til en html side (edit_WD/DD.html), der brukeren har muligheten til å endre navn og/eller status på dronen. Etter man har endret navn og/eller status kan man trykke på "Update Dissassembly/Worker drone" og da vil den oppdatere automatisk og lede brukeren tilbake til startsiden med den nye endringen(e). Det er ikke mulig å endre serienummeret til en *disassembly drone*.
+Alle droner i databasen har en "view profile" knapp, den vil lede brukeren til en redigerigs side (edit_WD/DD.html), der brukeren har muligheten til å endre navn og status på dronen. Etter man har endret navn og/eller status kan man trykke på "Update Dissassembly/Worker drone" og da vil den oppdatere automatisk og lede brukeren tilbake til startsiden med den nye endringen(e). Det er ikke mulig å endre serienummeret til en *disassembly drone*.
 
 
 
@@ -63,13 +63,14 @@ Alle droner i databasen har en "view profile" knapp, den vil lede brukeren til e
    pip install mysql.connector
    .env - med eget passord
 
-```
 
 ###Teknologier brukt:
 
 -   Python / Flask\
 -   MariaDB\
 -   HTML / CSS / JS\
+
+```
 
 ------------------------------------------------------------------------
 
@@ -82,7 +83,8 @@ Alle droner i databasen har en "view profile" knapp, den vil lede brukeren til e
 ### Nettverksoppsett
 
 -   IP-adresser\
-ip-adresser for server (raspberry pi): 10.200.14.11 , ip adresse for klient(windows): 10.2.0.31
+ip-adresser for server (raspberry pi): 10.200.14.11 
+ip adresse for klient(windows): 10.2.0.31
 
 -   Porter\ (mariadb - sudo ufw)
 To                         Action      From
@@ -97,9 +99,11 @@ Samba (v6)                 ALLOW       Anywhere (v6)
 3306/tcp (v6)              ALLOW       Anywhere (v6)
 
 
-Eksempel:
+Eksempel (henting av informasjon, som View Profile):
 
-    Klient → Waitress → MariaDB
+    Klient → Flask → MariaDB → Flask → Klient
+
+
 
 ### Tjenestekonfigurasjon
 
@@ -118,6 +122,8 @@ Eksempel:
 Refleksjon:
 
 - Jeg brukte Kanban litt senere enn jeg skulle i prodjektet fordi jeg visste ikke om det, og at vi skulle bruke det. Jeg har brukt en personlig logg hver dag for å skrive ned plan for dagen og holde styr på hva jeg skal gjøre og har gjort. Jeg tok screenshots for å sammenligne hva jeg ville ha som gjorde oppdateringer mye mer oversiktlige.
+
+- Med bruk av Kanban var ting litt mer oversiktlig og jeg kunne dele opp det jeg skulle gjøre i små oppgaver. 
 ```
 
 ------------------------------------------------------------------------
@@ -207,7 +213,7 @@ def get_connection():
 ```
 
 ```markdown
-Den øverste app.route henter startsiden (overview.html), og get_connection(): henter database informasjonen. get_connection(): vil bli hentet igjen i de andre kodedelene.
+Den øverste (@app.route) henter startsiden (overview.html), og get_connection(): henter database informasjonen. get_connection(): vil bli hentet igjen i de andre kodedelene når de henter data fra databasen.
 ```
 
 ```markdown
@@ -226,7 +232,7 @@ def drones():
     return render_template('overview.html', workerD=workerD, disassemblyD=disassemblyD)
 ```
 ```markdown
-Først så henter denne app.route drone-informasjonen fra databasen. Den kaller på get_connection, definerer mycursor til mydb.cursor() , så gjør den mycursor.execute() og henter alt (SELECT * FROM) fra worker drones og disassembly drones. Så setter den opp som en liste med mycursor.fetchall() og return render_template til hoved-siden.
+Først så henter @app.route drone-informasjonen fra databasen. Den definerer "drones" (def drones()), kaller på get_connection, definerer mycursor til mydb.cursor() , så gjør den mycursor.execute() og henter alt (SELECT * FROM) fra både *worker drones* og *disassembly drones*. Så setter den opp informasjonen som en liste med mycursor.fetchall() og return render_template til hoved-siden.
 ```
 
 
@@ -240,11 +246,12 @@ def serialNumber():
     s[x_pos]= 'X'
     return ''.join(s)
 ```
-```markdown
-Dette er koden brukt for å generere serienummer til disassembly drones.
 
-s er listen av number, x_pos står for x position som velger random plass i listen,
-så settes x_pos inn i s. Den bruker join(random.choice('01')) for _ in range (9) som skal velge et random tall, enten 0 eller 1, og printe ut det helt til den fyller range (9). Så setter den X i et random sted i stringen (random.randrange(9)). Den setter den ukjente x-verdien og definerer den som "X" og return printer/viser en sammendratt string av tilfeldige 0 og 1 tall, med en inblandet "X"
+```markdown
+Dette er koden brukt for å generere et tilfeldig serienummer til disassembly dronene.
+
+"s" er listen av number, "x_pos" står for x position som velger random plass i listen,
+så settes x_pos inn i s. Den bruker "join(random.choice('01')) for _ in range (9)" som skal velge et random tall, enten 0 eller 1, og printe ut det helt til den fyller ut range (9). Så setter den X i et random sted i stringen (random.randrange(9)). Deretter setter den inn den ukjente x-verdien og definerer den som "X" og "return" printer en sammendratt string av tilfeldige 0 og 1 tall, med en inblandet "X"
 
 ```
 
@@ -260,7 +267,7 @@ def add_WD():
 
 ```
 ```markdown
-Denne koden er tatt ut fra en større del for å legge til nye *worker drones*. Forklaringen er om starten av koden. Den tar @app.route til html siden "add_WD" og bruker "GET" og "POST" til å hente informasjon og plassere den inn i tabellen (som klipp og lim). "if request.method == "POST":" sier at når man skal plassere dataen inn i tabellen fra det den har hentet, skal den sette navnet i feltet "name" og status i feltet "status". 
+Dette utdraget av kode er tatt ut fra starten av koden som legger til nye *worker drones*. Den tar @app.route til html siden "add_WD" og bruker "GET" og "POST" til å hente informasjon og plassere den inn i tabellen (som klipp og lim). "if request.method == "POST":" sier at når man skal plassere dataen inn i tabellen fra det den har hentet, skal den sette navnet i feltet "name" og status i feltet "status". 
 ```
 
 ------------------------------------------------------------------------
