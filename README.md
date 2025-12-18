@@ -2,10 +2,10 @@
 
 ## 1. Forside
 
-**Drone Database:**\
-**Rebecca:**\
-**2IMI:**\
-**11/2025:**
+**Drone Database**\
+**Rebecca**\
+**2IMI**\
+**11/2025**
 
 
 **Kort beskrivelse av prosjektet:**
