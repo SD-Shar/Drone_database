@@ -35,9 +35,9 @@ Alle dronene får en ID automatisk som ikke endrer seg.
 
 ```
 
-**###Brukerflyt:**
+### Brukerflyt:
 
-### Startside:
+#### Startside:
 
 (Se brukerveiledning for mer oversikt)
 
@@ -95,7 +95,7 @@ Det er ikke mulig å endre serienummeret til en *disassembly drone*.
    .env - med eget passord
 ```
 
-###Teknologier brukt:
+### Teknologier brukt:
 ```markdown
 
 -   Python / Flask\
@@ -195,7 +195,7 @@ disassemblyD tabell:
 
 ```
 
-**####SQL-eksempel:** 
+**#### SQL-eksempel:** 
 ```markdown
 ``` sql
 
@@ -326,7 +326,7 @@ skal den sette navnet i feltet "name" og status i feltet "status".
 ## 9. Feilsøking og testing
 
 
-**###Feil jeg møtte**
+**### Feil jeg møtte**
 ```markdown
 -   Typiske feil jeg fikk var skrivefeil eller forvirrende funksjonsnavn.
 Jeg hadde først brukt "/main" for min "main page" som jeg fant ut var en innebygd kommando.
@@ -337,12 +337,12 @@ Noe annet jeg hadde gjort galt på begynnelsen var at jeg ikke hadde seperert fu
 Noen småting var også ikke linket sammen p.g.a. skrivefeil på funksjoner og noen ganger id navn på html elementer.
 ```
 
-**###Løsning**
+**### Løsning**
 ```markdown
 -   Hvordan jeg løste det: Dobbelsjekking av alt!
 ```
 
-**###Testmetoder:**
+**### Testmetoder:**
 ```markdown
 - Lagde test filer for å få en raskere/live oppdatering på css.
 Jeg lagde en seperat mappe og kopierte html sidene,
@@ -355,7 +355,7 @@ i tilegg til css så jeg kunne gjøre små endringer i css uten
 
 ## 10. Konklusjon og refleksjon
 
-**####Hva lærte jeg?**
+**#### Hva lærte jeg?**
 ```markdown
 - Jeg lærte at "main" var en innebygd back-end kommando som ikke er lurt å gi navn til index siden. 
 Jeg lærte litt mer om databaser; hvordan automatisk oppdatering fungerer og hvordan Mariadb håndterer nye kolonner og tabeller.
@@ -365,19 +365,19 @@ I tillegg så lærte jeg om funksjonene "GET" og "POST"
 og at det trengs for å hente og lime inn/plassere informasjon tatt fra databasen.
 ```
 
-**####Hva fungerte bra?**
+**#### Hva fungerte bra?**
 ```markdown
 - Jeg vil si at prosjektet gikk ganske bra generelt,
 jeg ble ferdig relativt raskt og hadde god tid til å fikse småting som farger, style og utseende.
 Jeg ble fornøyd med hvordan resultatet så ut og hvordan html og css samarbeidet. 
 ```
 
-**####Hva ville du gjort annerledes?**
+**#### Hva ville du gjort annerledes?**
 ```markdown
 - Til neste gang ville jeg vært mer oppmerksom på navnene jeg gir funksjoner og filer, dobbeltsjekke alt, i tillegg til å ikke gi noen filnavn "main".
 ```
 
-**####Hva var utfordrende?**
+**#### Hva var utfordrende?**
 ```markdown
 - Noe som var litt utfordrene var når jeg ikke visste hva som skapte feilene,
 dette fant jeg ut av eventuelt men det å måtte lese gjennom hele koden flere ganger ble ganske slitsomt etterhvert.
