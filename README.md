@@ -141,17 +141,17 @@ Eksempel (henting av informasjon, som View Profile):
 ### Tjenestekonfigurasjon
 
 ```markdown
--   systemctl / Supervisor\
--   Filrettigheter\
--   Miljøvariabler
+-   Mariadb / ssh / Flask\
 
 ```
 
 ------------------------------------------------------------------------
 
 ## 4. Prosjektstyring -- GitHub Projects (Kanban)
-```markdown
+
 -   Backlog / In Progress / Done\
+  
+```markdown
 
 Refleksjon:
 
@@ -196,7 +196,7 @@ disassemblyD tabell:
 
 ```
 
-**### SQL-eksempel:** 
+**SQL-eksempel:** 
 ```markdown
 ``` sql
 
@@ -406,7 +406,4 @@ så nå har jeg noe jeg kan bruke til en annen gang hvis jeg trenger noe lignend
 ```
 
 ### Laget av
-```markdown
 - Rebecca
-
-```
