@@ -165,7 +165,7 @@ Jeg tok screenshots for å sammenligne hva jeg ville ha som gjorde oppdateringer
 
 ## 5. Databasebeskrivelse
 
-#### Databasenavn:
+### Databasenavn:
 ```markdown
 drone_db
 ```
@@ -195,7 +195,7 @@ disassemblyD tabell:
 
 ```
 
-**#### SQL-eksempel:** 
+**### SQL-eksempel:** 
 ```markdown
 ``` sql
 
@@ -355,7 +355,7 @@ i tilegg til css så jeg kunne gjøre små endringer i css uten
 
 ## 10. Konklusjon og refleksjon
 
-**#### Hva lærte jeg?**
+**Hva lærte jeg?**
 ```markdown
 - Jeg lærte at "main" var en innebygd back-end kommando som ikke er lurt å gi navn til index siden. 
 Jeg lærte litt mer om databaser; hvordan automatisk oppdatering fungerer og hvordan Mariadb håndterer nye kolonner og tabeller.
@@ -365,19 +365,19 @@ I tillegg så lærte jeg om funksjonene "GET" og "POST"
 og at det trengs for å hente og lime inn/plassere informasjon tatt fra databasen.
 ```
 
-**#### Hva fungerte bra?**
+**Hva fungerte bra?**
 ```markdown
 - Jeg vil si at prosjektet gikk ganske bra generelt,
 jeg ble ferdig relativt raskt og hadde god tid til å fikse småting som farger, style og utseende.
 Jeg ble fornøyd med hvordan resultatet så ut og hvordan html og css samarbeidet. 
 ```
 
-**#### Hva ville du gjort annerledes?**
+**Hva ville jeg gjort annerledes?**
 ```markdown
 - Til neste gang ville jeg vært mer oppmerksom på navnene jeg gir funksjoner og filer, dobbeltsjekke alt, i tillegg til å ikke gi noen filnavn "main".
 ```
 
-**#### Hva var utfordrende?**
+**Hva var utfordrende?**
 ```markdown
 - Noe som var litt utfordrene var når jeg ikke visste hva som skapte feilene,
 dette fant jeg ut av eventuelt men det å måtte lese gjennom hele koden flere ganger ble ganske slitsomt etterhvert.
