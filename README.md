@@ -8,7 +8,7 @@
 **11/2025:**
 
 
-**###Kort beskrivelse av prosjektet:**
+**Kort beskrivelse av prosjektet:**
 
  Denne databasen er basert på en scene fra en indie animasjonsserie (indie er tatt fra det engelske ordet "independent" som i denne konteksten betyr at serien er produsert av en uavhengig gruppe med kunstnere og animatører) på youtube som heter MURDER DRONES. I serien er det en scene som viser en enkel database med droner, og jeg tenkte at å bruke det som utgangspunk for prosjektet mitt ville vært gøy og en god mulighet for læring. Jeg har tatt litt kreativ frihet ved å lage en lignende database med det jeg kunne fra før og har lært mens vi har jobbet med databaser, og stylet det til å se litt ut som serien. I tillegg har jeg lagt til flere elementer, tabeller og krav fra oppgaven vi har fått, til å vise kompetansen min med databaser i mariadb, bruk av python, flask og css.
  
