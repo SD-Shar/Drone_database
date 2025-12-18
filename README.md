@@ -101,7 +101,7 @@ Det er ikke mulig å endre serienummeret til en *disassembly drone*.
 
 -   Python / Flask\
 -   MariaDB\
--   HTML / CSS / JS\
+-   HTML / CSS\
 
 ```
 
