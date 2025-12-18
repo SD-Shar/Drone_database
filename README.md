@@ -80,12 +80,11 @@ Det er ikke mulig å endre serienummeret til en *disassembly drone*.
 ```
 
 2. **Installer krav:**
+  ```markdown
    ```bash
-   ```markdown
    pip install flask
    pip install mysql.connector
    .env - med eget passord
-```
 ```
 
 ###Teknologier brukt:
