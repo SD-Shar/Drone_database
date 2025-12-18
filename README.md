@@ -22,7 +22,7 @@
 
 ## 2. Systembeskrivelse
 
-###Formål med applikasjonen:
+**Formål med applikasjonen:**
 ```markdown
 Databasen inneholder 2 tabeller. En tabell for *worker drones* og en tabell for *disassembly drones*. Begge tabeller har ID, navn og status for hver drone. *Disassembly drones* har i tilegg også et tilfeldig serienummer hver. (Dette er en referanse til serien, der alle disassembly drones har et designert serienummer.)
 
@@ -38,26 +38,27 @@ Alle dronene får en ID automatisk som ikke endrer seg.
 ```markdown
 (Se brukerveiledning for mer oversikt)
 
-#### Worker Drones
+**Worker Drones**
 Når programmet kjøres, åpnes det til startsiden "/overview" der det vises overskrift, to tabeller ved siden av hverandre og to "legg til" knapper under hver tabell. Den første kolonnen til venstre er til *wokerdrones* og viser en tabell med ID, navn, status og muligheten til å slette dronen, se på informasjonen eller redigere det via "view profile".
 
-#### Disassembly Drones
+**Disassembly Drones**
 Den neste kolonnen inneholder en tabell som viser *disassembly drones*. Tabellen vist er helt lik *workerdrones*, med ID, navn, og status og muligheten til å redigere og/eller slette.
 *Disassembly drones* har noe ekstra tilknyttet til dataen som kan bli funnet ved å klikke på en *disassembly drone* profil. Under navnet på dronen vil det stå et tilfeldig serienummer for hver *disassembly drone*.
 
-### Delete (slett funksjon):
+**Delete (slett funksjon):**
 For alle droner er det en slett knapp ved siden av med navnet "Delete". Hvis du ønsker å slette en drone vil det komme opp en pop-up-vindu som spør om du er helt sikker på valget ditt. Om du velger å slette dronen vil den automatisk oppdatere tabellen og slette dronen fra databasen permanent.
 
-### View profile (redigering av droner):
+**View profile (redigering av droner):**
 Alle droner i databasen har en "view profile" knapp, den vil lede brukeren til en redigerigs side (edit_WD/DD.html), der brukeren har muligheten til å endre navn og status på dronen. Etter man har endret navn og/eller status kan man trykke på "Update Dissassembly/Worker drone" og da vil den oppdatere automatisk og lede brukeren tilbake til startsiden med den nye endringen(e). Det er ikke mulig å endre serienummeret til en *disassembly drone*.
+```
 
-
+```markdown
 
 ## Installasjon
-1. **####Klon prosjektet:**
+1. **Klon prosjektet:**
    git clone https://github.com/SD-Shar/Drone_database.git
 
-2. **####Installer krav:**
+2. **Installer krav:**
    ```bash
    pip install flask
    pip install mysql.connector
