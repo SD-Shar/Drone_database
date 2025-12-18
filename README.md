@@ -86,6 +86,7 @@ Det er ikke mulig å endre serienummeret til en *disassembly drone*.
    pip install mysql.connector
    .env - med eget passord
 ```
+```
 
 ###Teknologier brukt:
 ```markdown
