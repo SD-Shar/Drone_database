@@ -326,7 +326,7 @@ skal den sette navnet i feltet "name" og status i feltet "status".
 ## 9. Feilsøking og testing
 
 
-**### Feil jeg møtte**
+**Feil jeg møtte**
 ```markdown
 -   Typiske feil jeg fikk var skrivefeil eller forvirrende funksjonsnavn.
 Jeg hadde først brukt "/main" for min "main page" som jeg fant ut var en innebygd kommando.
@@ -337,12 +337,12 @@ Noe annet jeg hadde gjort galt på begynnelsen var at jeg ikke hadde seperert fu
 Noen småting var også ikke linket sammen p.g.a. skrivefeil på funksjoner og noen ganger id navn på html elementer.
 ```
 
-**### Løsning**
+**Løsning**
 ```markdown
 -   Hvordan jeg løste det: Dobbelsjekking av alt!
 ```
 
-**### Testmetoder:**
+**Testmetoder:**
 ```markdown
 - Lagde test filer for å få en raskere/live oppdatering på css.
 Jeg lagde en seperat mappe og kopierte html sidene,
