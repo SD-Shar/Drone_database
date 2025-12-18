@@ -238,11 +238,9 @@ def get_connection():
     )
 
 ```
-
-```markdown
 Den øverste (@app.route) henter startsiden (overview.html), og get_connection(): henter database informasjonen.
 get_connection(): vil bli hentet igjen i de andre kodedelene når de henter data fra databasen.
-```
+
 
 ```markdown
 ```python
@@ -259,12 +257,11 @@ def drones():
     
     return render_template('overview.html', workerD=workerD, disassemblyD=disassemblyD)
 ```
-```markdown
 Først så henter @app.route drone-informasjonen fra databasen.
 Den definerer "drones" (def drones()), kaller på get_connection, definerer mycursor til mydb.cursor() ,
 så gjør den mycursor.execute() og henter alt (SELECT * FROM) fra både *worker drones* og *disassembly drones*.
 Den setter opp informasjonen som en liste med mycursor.fetchall() og return render_template til hoved-siden.
-```
+
 
 
 ```markdown
@@ -278,7 +275,7 @@ def serialNumber():
     return ''.join(s)
 ```
 
-```markdown
+
 Dette er koden brukt for å generere et tilfeldig serienummer til disassembly dronene.
 
 "s" er listen av number, "x_pos" står for x position som velger random plass i listen, så settes x_pos inn i s.
@@ -287,8 +284,6 @@ og printe ut det helt til den fyller ut range (9).
 Så setter den X i et random sted i stringen (random.randrange(9)).
 Deretter setter den inn den ukjente x-verdien og definerer den som "X"
 og "return" printer en sammendratt string av tilfeldige 0 og 1 tall, med en inblandet "X"
-
-```
 
 ```markdown
 ```python
@@ -301,12 +296,12 @@ def add_WD():
     (...)    
 
 ```
-```markdown
+
 Dette utdraget av kode er tatt ut fra starten av koden som legger til nye *worker drones*.
 Den tar @app.route til html siden "add_WD" og bruker "GET" og "POST" til å hente informasjon og plassere den inn i tabellen (som klipp og lim).
 "if request.method == "POST":" sier at når man skal plassere dataen inn i tabellen fra det den har hentet,
 skal den sette navnet i feltet "name" og status i feltet "status". 
-```
+
 
 ------------------------------------------------------------------------
 
