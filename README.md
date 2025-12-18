@@ -10,11 +10,15 @@
 
 **Kort beskrivelse av prosjektet:**
 
-Denne databasen er basert på en scene fra en indie animasjonsserie (indie er tatt fra det engelske ordet "independent" som i denne konteksten betyr at serien er produsert av en uavhengig gruppe med kunstnere og animatører) på youtube som heter MURDER DRONES. I serien er det en scene som viser en enkel database med droner, og jeg tenkte at å bruke det som utgangspunk for prosjektet mitt ville vært gøy og en god mulighet for læring. Jeg har tatt litt kreativ frihet ved å lage en lignende database med det jeg kunne fra før og har lært mens vi har jobbet med databaser, og stylet det til å se litt ut som serien. I tillegg har jeg lagt til flere elementer, tabeller og krav fra oppgaven vi har fått, til å vise kompetansen min med databaser i mariadb, bruk av python, flask og css.
+Denne databasen er basert på en scene fra en indie animasjonsserie (indie er tatt fra det engelske ordet "independent" som i denne konteksten betyr at serien er produsert av en uavhengig gruppe med kunstnere og animatører) på youtube som heter MURDER DRONES. I serien er det en scene som viser en enkel database med droner, og jeg tenkte at å bruke det som utgangspunk for prosjektet mitt ville vært gøy og en god mulighet for læring.
+
+Jeg har tatt litt kreativ frihet ved å lage en lignende database med det jeg kunne fra før og har lært mens vi har jobbet med databaser, og stylet det til å se litt ut som serien. I tillegg har jeg lagt til flere elementer, tabeller og krav fra oppgaven vi har fått, til å vise kompetansen min med databaser i mariadb, bruk av python, flask og css.
  
  **Litt om MURDERDRONES:**
 
-Murder Drones er en indie-animasjonsserie på YoutTube, produsert av GLITCH Productions og laget/skrevet av Liam Vickers. Det er en horror-komedie på 8 episoder og tar plass i året 3071 på en eksoplanet ved navn "Copper 9". Serien følger hovedkarakteren Uzi, en *worker drone* som møter en *disassembly drone* ved navn "N" (Bokstaven kommer fra serienummeret hans, som er på armen. Jeg har tatt inspirasjon fra dette og lagt det til i databasen som du vil se lenger ned). *Worker Drones* var lagd for å utvinne ressurser fra eksoplaneter, men etter en kjernekollaps på planeten, utryddet det allt av mennenske liv. Uten mennesker adapterte *worker dronene* til en egen sivilisasjon for seg selv. På grunn av dette ble det sent "disassembly drones", som skulle fjerne *worker drones* fra planeten, siden menneskene ville ikke ha sansende og frittgående KI. *Worker dronene* gav *disassembly drones* kallenavnet "Murder Drones". (herav tittelen)
+Murder Drones er en indie-animasjonsserie på YoutTube, produsert av GLITCH Productions og laget/skrevet av Liam Vickers. Det er en horror-komedie på 8 episoder og tar plass i året 3071 på en eksoplanet ved navn "Copper 9". Serien følger hovedkarakteren Uzi, en *worker drone* som møter en *disassembly drone* ved navn "N" (Bokstaven kommer fra serienummeret hans, som er på armen.
+
+Jeg har tatt inspirasjon fra dette og lagt det til i databasen som du vil se lenger ned). *Worker Drones* var lagd for å utvinne ressurser fra eksoplaneter, men etter en kjernekollaps på planeten, utryddet det allt av mennenske liv. Uten mennesker adapterte *worker dronene* til en egen sivilisasjon for seg selv. På grunn av dette ble det sent "disassembly drones", som skulle fjerne *worker drones* fra planeten, siden menneskene ville ikke ha sansende og frittgående KI. *Worker dronene* gav *disassembly drones* kallenavnet "Murder Drones". (herav tittelen)
 
 ------------------------------------------------------------------------
 
@@ -42,6 +46,7 @@ Alle dronene får en ID automatisk som ikke endrer seg.
 ```markdown
 Når programmet kjøres, åpnes det til startsiden "/overview" der det vises overskrift,
 to tabeller ved siden av hverandre og to "legg til" knapper under hver tabell.
+
 Den første kolonnen til venstre er til *wokerdrones* og viser en tabell med ID, navn, status
 og muligheten til å slette dronen, se på informasjonen eller redigere det via "view profile".
 ```
@@ -50,6 +55,7 @@ og muligheten til å slette dronen, se på informasjonen eller redigere det via 
 ```markdown
 Den neste kolonnen inneholder en tabell som viser *disassembly drones*.
 Tabellen vist er helt lik *workerdrones*, med ID, navn, og status og muligheten til å redigere og/eller slette.
+
 *Disassembly drones* har noe ekstra tilknyttet til dataen som kan bli funnet
 ved å klikke på en *disassembly drone* profil.
 Under navnet på dronen vil det stå et tilfeldig serienummer for hver *disassembly drone*.
@@ -66,6 +72,7 @@ Om du velger å slette dronen vil den automatisk oppdatere tabellen og slette dr
 ```markdown
 Alle droner i databasen har en "view profile" knapp, den vil lede brukeren til en redigerigs side (edit_WD/DD.html),
 der brukeren har muligheten til å endre navn og status på dronen.
+
 Etter man har endret navn og/eller status kan man trykke på "Update Dissassembly/Worker drone"
 og da vil den oppdatere automatisk og lede brukeren tilbake til startsiden med den nye endringen(e).
 Det er ikke mulig å endre serienummeret til en *disassembly drone*.
@@ -323,6 +330,7 @@ skal den sette navnet i feltet "name" og status i feltet "status".
 -   Typiske feil jeg fikk var skrivefeil eller forvirrende funksjonsnavn.
 Jeg hadde først brukt "/main" for min "main page" som jeg fant ut var en innebygd kommando.
 Dette gjorde at ting var litt forvirrende på starten, men etter jeg fikk fikset det så gikk det greit.
+
 Noe annet jeg hadde gjort galt på begynnelsen var at jeg ikke hadde seperert funksjonsnavnene til
 *disassembly drones* og *worker drones* og hadde bare brukt "def drones():" for begge.
 Noen småting var også ikke linket sammen p.g.a. skrivefeil på funksjoner og noen ganger id navn på html elementer.
@@ -349,7 +357,9 @@ i tilegg til css så jeg kunne gjøre små endringer i css uten
 **####Hva lærte jeg?**
 ```markdown
 - Jeg lærte at "main" var en innebygd back-end kommando som ikke er lurt å gi navn til index siden. 
-Jeg lærte litt mer om databaser; hvordan automatisk oppdatering fungerer og hvordan Mariadb håndterer nye kolonner og tabeller. Jeg lærte også hvordan man kan lage en tilfeldig nummergenerator i python, med en extra variabel innblandet.
+Jeg lærte litt mer om databaser; hvordan automatisk oppdatering fungerer og hvordan Mariadb håndterer nye kolonner og tabeller.
+Jeg lærte også hvordan man kan lage en tilfeldig nummergenerator i python, med en extra variabel innblandet.
+
 I tillegg så lærte jeg om funksjonene "GET" og "POST"
 og at det trengs for å hente og lime inn/plassere informasjon tatt fra databasen.
 ```
@@ -370,8 +380,10 @@ Jeg ble fornøyd med hvordan resultatet så ut og hvordan html og css samarbeide
 ```markdown
 - Noe som var litt utfordrene var når jeg ikke visste hva som skapte feilene,
 dette fant jeg ut av eventuelt men det å måtte lese gjennom hele koden flere ganger ble ganske slitsomt etterhvert.
+
 Det var også helt nytt for meg å lage en tilfeldig serienummer generator,
 og jeg fant ikke noe på nett som var det jeg lette etter så jeg måtte spørre chatgpt om det.
+
 Jeg ville helst ikke bruke KI, men koden jeg fikk var enkel nok til å forstå og virket brukbar,
 så nå har jeg noe jeg kan bruke til en annen gang hvis jeg trenger noe lignende.
 ```
